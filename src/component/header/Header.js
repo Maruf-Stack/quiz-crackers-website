@@ -11,9 +11,9 @@ const Header = () => {
                 </div>
                 <div className="font-semibold nav">
                     <Link to='/home'>Home</Link>
-                    <Link to='/topic'>Topic</Link>
+                    <Link to='topic'>Topic</Link>
                     <Link>Statistic</Link>
-                    <Link>Blog</Link>
+                    <Link to='/blog'>Blog</Link>
                 </div>
             </div>
 

@@ -5,7 +5,9 @@ import './home.css';
 
 const Home = () => {
     const quizs = useLoaderData();
+
     const allQuiz = quizs.data;
+
 
     return (
         <div>
@@ -23,7 +25,7 @@ const Home = () => {
             </div>
             <div className="grid gap-12 mt-10 ml-3 mr-3 md:ml-20 md:mr-20 quiz-container md:grid-cols-3">
                 {
-                    allQuiz.map(topic => <Topic key={topic.id} topics={topic}></Topic>)
+                    allQuiz.map(topics => <Topic key={topics.id} topics={topics} ></Topic>)
                 }
             </div>
         </div>

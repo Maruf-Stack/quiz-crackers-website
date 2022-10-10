@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Topics from './component/all-topics/Topics';
+import Blog from './component/blog/Blog';
 import Home from './component/home/Home';
 import Main from './component/layout/Main';
 import Topic from './component/Topic/Topic';
@@ -12,24 +14,31 @@ function App() {
       children: [
         {
           path: '/',
-
-          element: <Home></Home>
-        }, {
-          path: '/home',
-          loader: () => {
-            return fetch('https://openapi.programming-hero.com/api/quiz')
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz');
           },
           element: <Home></Home>
         },
         {
+          path: '/home',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
+          element: <Home></Home>,
+        },
+        {
           path: '/topic',
-          element: <Topic></Topic>
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
+          element: <Topics></Topics>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
         }
-
-      ]
+      ],
     },
-
-
   ])
   return (
     <div className="app">
