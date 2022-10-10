@@ -1,20 +1,30 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Topic from '../Topic/Topic';
 import './home.css';
 
 const Home = () => {
+    const quizs = useLoaderData();
+    const allQuiz = quizs.data;
+
     return (
         <div>
             <div className="banner">
                 <div className="banner-title">
 
-                    <p className='font-semibold text-xl'>
+                    <div className='text-xl font-semibold'>
                         <div className='mb-5'>
-                            <p className='font-bold text-4xl welcome'>Welcome to our Quiz community</p>
+                            <p className='text-4xl font-bold welcome'>Welcome to our Quiz community</p>
                         </div>
                         Here We make some quiz for your.That will help to know about programming.This site is very<br></br> helpfull for a programmer.
                         And programmer can get help and support for any problem<br></br> from here.Start your journey with us.
-                    </p>
+                    </div>
                 </div>
+            </div>
+            <div className="grid gap-12 mt-10 ml-3 mr-3 md:ml-20 md:mr-20 quiz-container md:grid-cols-3">
+                {
+                    allQuiz.map(topic => <Topic key={topic.id} topics={topic}></Topic>)
+                }
             </div>
         </div>
     );
