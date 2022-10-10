@@ -4,6 +4,7 @@ import Topics from './component/all-topics/Topics';
 import Blog from './component/blog/Blog';
 import Home from './component/home/Home';
 import Main from './component/layout/Main';
+import Quiz from './component/quiz/Quiz';
 import Topic from './component/Topic/Topic';
 
 function App() {
@@ -36,6 +37,13 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/topic/:topicId',
+          loader: (params) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element: <Quiz></Quiz>
         }
       ],
     },

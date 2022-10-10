@@ -12,6 +12,7 @@ const Header = () => {
                 <div className="font-semibold nav">
                     <Link to='/home'>Home</Link>
                     <Link to='topic'>Topic</Link>
+                    <Link>Quiz</Link>
                     <Link>Statistic</Link>
                     <Link to='/blog'>Blog</Link>
                 </div>

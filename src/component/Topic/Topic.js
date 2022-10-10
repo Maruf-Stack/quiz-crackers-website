@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './topic.css'
 
 const Topic = ({ topics }) => {
-    const { name, logo, total } = topics;
+
+    const { name, logo, total, id } = topics;
     return (
         <div className='grid gap-10'>
             <div className='single-topic'>
@@ -15,7 +17,7 @@ const Topic = ({ topics }) => {
                 </div>
                 <div className='flex items-center justify-between'>
                     <p className='text-2xl font-bold'>{name}</p>
-                    <button className='font-semibold quiz-btn text-x'>Start Quiz</button>
+                    <Link to={`/topic/${id}`}><button className='font-semibold quiz-btn text-x'>Start Quiz</button></Link>
                 </div>
 
             </div>
