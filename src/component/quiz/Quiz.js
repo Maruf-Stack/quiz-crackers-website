@@ -5,12 +5,15 @@ import SingleQuiz from '../single quiz/SingleQuiz';
 
 const Quiz = () => {
     const quiz = useLoaderData();
+    const name = quiz.data.name;
+    const allquestions = quiz.data.questions;
+    // console.log(allquestions)
 
-    const questions = quiz.data.questions;
     return (
         <div>
+            <p className='mt-5 mb-10 text-2xl font-bold text-center'>Topic name - {name}</p>
             {
-                questions.map(question => <SingleQuiz key={question.id} questions={questions}></SingleQuiz>)
+                allquestions.map(snQuestion => <SingleQuiz key={snQuestion.id} snQuestion={snQuestion}></SingleQuiz>)
             }
         </div>
     );

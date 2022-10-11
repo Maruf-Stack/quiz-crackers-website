@@ -11,13 +11,13 @@ const Topic = ({ topics }) => {
                 <div className="mb-4 img">
                     <img src={logo} alt="" />
                 </div>
-                <div className="mb-4 font-semibold que-quantity text-x">
+                <div className="mb-4 text-base font-semibold lg:text-xl que-quantity">
                     Number of Quiz : {total}
 
                 </div>
                 <div className='flex items-center justify-between'>
                     <p className='text-2xl font-bold'>{name}</p>
-                    <Link to={`/topic/${id}`}><button className='font-semibold quiz-btn text-l'>Start Quiz</button></Link>
+                    <Link to={`/topic/${id}`}><button className='text-sm font-semibold quiz-btn'>Start Quiz</button></Link>
                 </div>
 
             </div>

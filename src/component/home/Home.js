@@ -25,7 +25,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid gap-12 mt-10 ml-3 mr-3 md:ml-20 md:mr-20 quiz-container md:grid-cols-3">
+            <div className="grid gap-12 mt-10 ml-3 mr-3 md:ml-20 md:mr-20 quiz-container lg:grid-cols-3 md:grid-cols-2">
                 {
                     allQuiz.map(topics => <Topic key={topics.id} topics={topics} ></Topic>)
                 }
