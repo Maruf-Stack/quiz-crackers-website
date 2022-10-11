@@ -50,7 +50,7 @@ function App() {
         {
           path: '/statistic',
           element: <Stratistic></Stratistic>
-        }
+        },
       ],
     },
   ])
