@@ -17,7 +17,7 @@ const Topic = ({ topics }) => {
                 </div>
                 <div className='flex items-center justify-between'>
                     <p className='text-2xl font-bold'>{name}</p>
-                    <Link to={`/topic/${id}`}><button className='font-semibold quiz-btn text-x'>Start Quiz</button></Link>
+                    <Link to={`/topic/${id}`}><button className='font-semibold quiz-btn text-l'>Start Quiz</button></Link>
                 </div>
 
             </div>

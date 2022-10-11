@@ -1,12 +1,17 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import SingleQuiz from '../single quiz/SingleQuiz';
+
 
 const Quiz = () => {
-    // const startQuiz = useLoaderData();
-    const startQuiz = useLoaderData();
+    const quiz = useLoaderData();
+
+    const questions = quiz.data.questions;
     return (
         <div>
-            This is quiz
+            {
+                questions.map(question => <SingleQuiz key={question.id} questions={questions}></SingleQuiz>)
+            }
         </div>
     );
 };

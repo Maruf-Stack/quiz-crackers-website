@@ -5,6 +5,7 @@ import Blog from './component/blog/Blog';
 import Home from './component/home/Home';
 import Main from './component/layout/Main';
 import Quiz from './component/quiz/Quiz';
+import Stratistic from './component/statistic/Stratistic';
 import Topic from './component/Topic/Topic';
 
 function App() {
@@ -40,10 +41,14 @@ function App() {
         },
         {
           path: '/topic/:topicId',
-          loader: (params) => {
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`);
           },
           element: <Quiz></Quiz>
+        },
+        {
+          path: '/statistic',
+          element: <Stratistic></Stratistic>
         }
       ],
     },
