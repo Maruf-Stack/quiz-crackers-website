@@ -2,17 +2,18 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Topics from './component/all-topics/Topics';
 import Blog from './component/blog/Blog';
+import Error from './component/error/Error';
 import Home from './component/home/Home';
 import Main from './component/layout/Main';
 import Quiz from './component/quiz/Quiz';
 import Stratistic from './component/statistic/Stratistic';
-import Topic from './component/Topic/Topic';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <Error />,
       children: [
         {
           path: '/',
