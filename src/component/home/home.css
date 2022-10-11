@@ -14,3 +14,22 @@
     height: 100%;
     color: whitesmoke;
 }
+
+@media screen and (max-width:767px) {
+    .welcome {
+        font-size: 30px;
+    }
+
+    .banner-title {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .des {
+        font-size: 15px;
+    }
+
+    .banner {
+        height: 45vh;
+    }
+}

@@ -16,3 +16,7 @@
     border-radius: 25px;
     color: whitesmoke;
 }
+
+.quiz-btn:hover {
+    background-color: #03203cbb;
+}

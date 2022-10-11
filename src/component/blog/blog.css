@@ -4,3 +4,11 @@
     border-radius: 15px;
     height: 150px;
 }
+
+@media screen and (max-width:767px) {
+    .que {
+        background-color: rgb(153, 208, 255);
+        height: auto;
+    }
+
+}

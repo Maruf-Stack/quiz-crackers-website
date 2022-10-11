@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import './statistic.css'
 
 const Stratistic = () => {
     const quizCon = useLoaderData();
@@ -10,8 +11,8 @@ const Stratistic = () => {
 
     return (
         <div className='md:ml-10 md:mt-10'>
-            <LineChart width={500}
-                height={300}
+            <LineChart className='chart' width={400}
+                height={400}
                 data={data}>
                 <XAxis dataKey="name" />
                 <YAxis />

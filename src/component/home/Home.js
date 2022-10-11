@@ -18,8 +18,10 @@ const Home = () => {
                         <div className='mb-5'>
                             <p className='text-4xl font-bold welcome'>Welcome to our Quiz community</p>
                         </div>
-                        Here We make some quiz for your.That will help to know about programming.This site is very<br></br> helpfull for a programmer.
-                        And programmer can get help and support for any problem<br></br> from here.Start your journey with us.
+                        <div className="des">
+                            Here We make some quiz for your.That will help to know about programming.This site is very<br></br> helpfull for a programmer.
+                            And programmer can get help and support for any problem<br></br> from here.Start your journey with us.
+                        </div>
                     </div>
                 </div>
             </div>
