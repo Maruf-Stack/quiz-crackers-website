@@ -14,7 +14,7 @@ const Blog = () => {
             </div>
             <div className='mb-8 que'>
                 <p className='mb-3 text-2xl'><span className='text-3xl font-semibold'>Question 3: </span>What is useRef?</p>
-                <p><span className='text-xl font-semibold'>Answer : </span>UseRef is like a “box” that can hold a mutable value in its.useRef() creates a plain JavaScript object.It is useful for more than the ref attribute. It’s handy for keeping any mutable value around similar to how you’d use instance fields in classes.</p>
+                <p><span className='text-xl font-semibold'>Answer : </span>UseRef is like a “box” that can hold a mutable value in its.useRef() creates a plain JavaScript object.It is useful for more than the ref attribute. It's handy for keeping any mutable value around similar to how you'd use instance fields in classes.</p>
             </div>
         </div>
     );

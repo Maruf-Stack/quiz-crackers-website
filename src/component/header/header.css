@@ -15,3 +15,18 @@
 .for {
     color: orange;
 }
+
+@media screen and (max-width:767px) {
+
+    .title p {
+        display: flex;
+        font-size: 40px;
+        background-color: red;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
