@@ -7,3 +7,4 @@ live website link :
 3.This is an educational website por programmer.
 4.You can test yourself by this website.
 5.This website is hosted by netlify.
+6.you can see a interesting toast if you click on any option.

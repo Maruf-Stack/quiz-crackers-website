@@ -21,11 +21,4 @@
     background-color: #03203cbb;
 }
 
-@media screen and (max-width:991px) {
-    .quiz-btn2 {
-        padding: 8px 15px;
-        background-color: #03203C;
-        border-radius: 25px;
-        color: whitesmoke;
-    }
-}
+@media screen and (max-width:991px) {}
